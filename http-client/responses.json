@@ -1,0 +1,32 @@
+{
+    "timestamp": "2026-02-12T04:50:18.662906",
+    "results": [
+        {
+            "api": "stock_invalid_param_test",
+            "request": {
+                "method": "GET",
+                "path": "/stock",
+                "params": {
+                    "wrong_param": "test"
+                }
+            },
+            "result": {
+                "status": "client_error",
+                "status_code": 422,
+                "error": {
+                    "detail": [
+                        {
+                            "type": "missing",
+                            "loc": [
+                                "query",
+                                "name"
+                            ],
+                            "msg": "Field required",
+                            "input": null
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
